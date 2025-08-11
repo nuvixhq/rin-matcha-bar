@@ -1,83 +1,162 @@
-body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f8f8f5;
-  color: #333;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Rin Matcha Bar</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
 
-header {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #d6e3b5;
-}
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
 
-.logo {
-  max-width: 150px;
-  margin-bottom: 1rem;
-}
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  margin: 0;
-  font-size: 2.5rem;
-}
+    nav {
+      background-color: #388e3c;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.8rem 0;
+    }
 
-.tagline {
-  font-style: italic;
-  color: #555;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
 
-section {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem 1rem;
-}
+    nav a:hover {
+      color: #c8e6c9;
+    }
 
-section h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #4a5d23;
-  margin-bottom: 1rem;
-}
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
 
-.menu ul {
-  list-style: none;
-  padding: 0;
-}
+    .menu-section {
+      margin-bottom: 3rem;
+    }
 
-.menu li {
-  padding: 0.5rem 0;
-  font-size: 1.1rem;
-}
+    .menu-section h2 {
+      border-bottom: 3px solid #2e7d32;
+      padding-bottom: 0.3rem;
+      color: #2e7d32;
+    }
 
-.contact p {
-  margin: 0.3rem 0;
-}
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
 
-.menu-button-container {
-  text-align: center;
-  margin: 2rem 0;
-}
+    .menu-item {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
 
-.menu-button {
-  background-color: #4a5d23;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
+    .menu-item:hover {
+      transform: scale(1.03);
+    }
 
-.menu-button:hover {
-  background-color: #3a471a;
-}
+    .menu-item img {
+      max-width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #e5f0cf;
-  font-size: 0.9rem;
-  color: #555;
-}
+    .menu-item h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .price {
+      color: #388e3c;
+      font-weight: bold;
+      margin-top: 0.3rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2e7d32;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rin Matcha Bar</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+    <section class="menu-section">
+      <h2>Iced Drinks</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="iced-matcha.jpg" alt="Iced Matcha Latte">
+          <h3>Iced Matcha Latte</h3>
+          <p class="price">£4.50</p>
+        </div>
+        <div class="menu-item">
+          <img src="iced-houjicha.jpg" alt="Iced Houjicha Latte">
+          <h3>Iced Houjicha Latte</h3>
+          <p class="price">£4.80</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Hot Drinks</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="hot-matcha.jpg" alt="Hot Matcha Latte">
+          <h3>Hot Matcha Latte</h3>
+          <p class="price">£4.20</p>
+        </div>
+        <div class="menu-item">
+          <img src="hot-houjicha.jpg" alt="Hot Houjicha Latte">
+          <h3>Hot Houjicha Latte</h3>
+          <p class="price">£4.50</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Rin Matcha Bar. All Rights Reserved.
+  </footer>
+</body>
+</html>
