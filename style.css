@@ -55,6 +55,25 @@ section h2 {
   margin: 0.3rem 0;
 }
 
+.menu-button-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.menu-button {
+  background-color: #4a5d23;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #3a471a;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
